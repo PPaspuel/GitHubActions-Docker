@@ -38,5 +38,5 @@ jobs:
             docker imagen pull patriciop98/github-actions-docker:flaskapp
             docker container stop contflaskpatricio
             docker container rm contflaskpatricio
-            docker container run -d --name contflaskpatricio -p 80:5000 patriciop98/github-actions-docker:flaskapp 
+            docker container run -d --name contflaskpatricio -p 8080:5000 patriciop98/github-actions-docker:flaskapp 
           
