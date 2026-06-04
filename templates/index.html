@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ titulo }}</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            min-height: 100vh;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .badge {
+            background-color: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 8px 18px;
+            border-radius: 30px;
+            margin-bottom: 25px;
+            font-size: 0.9rem;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #2496ed, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            max-width: 700px;
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #2496ed;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d7cc7;
+        }
+
+        .btn-secondary {
+            border: 1px solid #94a3b8;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        footer {
+            position: fixed;
+            bottom: 15px;
+            width: 100%;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="badge">
+            CI/CD • Docker • GitHub Actions
+        </div>
+
+        <h1>{{ titulo }}</h1>
+
+        <p>
+            Automatización moderna para la construcción, prueba y despliegue
+            continuo de aplicaciones utilizando contenedores Docker y flujos
+            de trabajo de GitHub Actions.
+        </p>
+
+        <div class="buttons">
+            <a href="#" class="btn btn-primary">Ver Pipeline</a>
+            <a href="#" class="btn btn-secondary">Documentación</a>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 | Docker & GitHub Actions Demo
+    </footer>
+
+</body>
+</html>
